@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="mymodule" ng-controller="mycontroller">
+<head>
+   <script src="angular.min.js"></script>
+   <script src="JS1.js"></script>
+   
+	<title>AngularJS Basics</title>
+</head>
+<body >
+      <div>
+      <table>
+      	<thead>
+      	<tr>
+      	     <th>Name</th>
+      	     <th>Likes</th>
+      	     <th>Dislikes</th>
+      	     <th>Likes/Dislikes</th>
+      	</tr>	
+      	</thead>
+      	<tbody>
+      		<tr ng-repeat="tool in tools">
+      			
+      			<td>{{tool.Name}}</td>
+      			<td>{{tool.Likes}}</td>
+      			<td>{{tool.Dislikes}}</td>
+      			<td>
+      			<input type="button" value="Likes" ng-click="Likes1(tool)">
+      			<input type="button" value="Dislikes" ng-click="Dislikes1(tool)">
+      			</td>
+
+
+
+
+
+      		</tr>
+
+      	</tbody>
+      </table>
+      
+
+
+      	
+
+     </div>
+       
+        
+</body>
+</html>
